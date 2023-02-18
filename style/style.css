@@ -294,7 +294,7 @@ body{
 }   
 
 @media (max-width:900px) {
-    .moda-content {
+    .modal-content {
         margin-top: 250px;
     }
 
@@ -302,7 +302,7 @@ body{
 
 
 @media (max-width:400px) {
-    .moda-content {
+    .modal-content {
         margin-top: 200px;
     }
 
