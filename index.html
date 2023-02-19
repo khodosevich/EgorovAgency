@@ -17,7 +17,6 @@
 <body>
       <div class="lead-pages">
             <div class="container">
-
                 <div id="my-modal-success" class="modal-success">
                         <div class="modal-content">
                             <div class="btn__close-right">
@@ -30,7 +29,6 @@
                             </div>    
                         </div>
                 </div>
-
             <div id="my-modal" class="modal">
                     <div class="modal-content">
                         <div class="btn__close-right">
@@ -43,7 +41,6 @@
                         </div>    
                     </div>
                </div>
-
             <div class="lead_content">
                         <div class="logo">
                             <a href="index.html">
@@ -61,47 +58,35 @@
                         <div class="timer-container">
                             <div id="countdown" class="timer-clock">
                                 <div class="timer__items">
-
                                     <div class="item__with__vector">
                                         <div class="timer__item timer__days">
                                             <div class="timer__y">
                                                 <p>00</p>
-                                               
                                             </div>
-                                            
                                         </div>
                                         <img class="vector-time" src="img/Group 20961.svg" alt="">
                                     </div>
-                                    
                                      <div class="timer__item timer__dot">:</div> 
-
                                      <div class="item__with__vector">
                                         <div class="timer__item timer__hours">
                                             <div class="timer__y">
                                                 <p>
                                                  00
                                                 </p>
-                                             
                                             </div>
                                         </div>
                                         <img class="vector-time" src="img/Group 20962.svg" alt="">
                                      </div>
-
-                                    
                                     <div class="timer__item timer__dot">:</div>
-
-                                    
                                     <div class="item__with__vector">
                                         <div class="timer__item timer__minutes">
                                             <div class="timer__y">
                                                 <p>00</p>
-                                                
                                             </div>
                                         </div>
                                         <img class="vector-time" src="img/Group 20923.svg" alt="">
                                     </div>
                                     <div class="timer__item timer__dot">:</div>
-
                                     <div class="item__with__vector">
                                         <div class="timer__item timer__seconds">
                                             <div class="timer__y">
@@ -118,11 +103,9 @@
                                 Check our event page when you wait:
                             </p>
                             <div id="check-our-event" class="check-our-event" >
-                                    <form action="">
                                         <button id="go-to-event" class="go-to-event">
                                             <a target="_blank" href="https://github.com/khodosevich">Go to the event</a>
                                         </button>
-                                    </form>
                                 <img src="img/arrow-right.svg" alt="strelka">
                             </div>
                         </div>
@@ -131,16 +114,19 @@
         </div>
         <div class="get-notifield">
             <div class="container">
-                <div class="notifield-content">
-                    <div class="input-lead">
-                        <input class="input__email" type="email" placeholder="Enter your Email and get notified" >
-                        <span id="send-email" class="red-link">
-                            <img src="img/arrow-right.svg" alt="">
-                        </span>    
-                    </div>
+                <div class="notifield-content"> 
+                        <form class="input-lead" action="/mail1.php" method="post">
+                            <input class="input__email" type="text" name="name" placeholder="Enter your Email and get notified">
+                            <button type="submit">
+                                <span type="submit" id="send-email" class="red-link">
+                                    <img src="img/arrow-right.svg" alt="">
+                                </span>  
+                            </button>
+                        </form>
                 </div>
             </div>
         </div>
         <script src="js/script.js"></script>
+        <script src="js/ajax.js"></script>
 </body>
 </html>

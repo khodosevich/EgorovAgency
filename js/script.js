@@ -93,8 +93,3 @@ document.addEventListener('DOMContentLoaded', function() {
 
     timerId = setInterval(countdownTimer, 1000);
   });
-
-
-  
-
-
